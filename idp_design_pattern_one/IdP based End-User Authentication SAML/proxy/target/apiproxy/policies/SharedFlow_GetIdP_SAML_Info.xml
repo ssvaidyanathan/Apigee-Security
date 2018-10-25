@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout async="false" continueOnError="false" enabled="true" name="SharedFlow_GetIdP_SAML_Info">
-    <DisplayName>SharedFlow_GetIdP_SAML_Info</DisplayName>
-    <FaultRules/>
-    <Properties/>
-    <SharedFlowBundle>SharedFlow_GetIdP_SAML_Info</SharedFlowBundle>
-</FlowCallout>
