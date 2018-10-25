@@ -1,0 +1,19 @@
+[
+  {
+    "name": "SAMLBasedIdentityDemoApp",
+    "credentials": [
+      {
+        "consumerKey": "CD5V0R3d6YnBEXh5kXmJgqdmajGHkq9I",
+        "consumerSecret": "lmGzWArPVBkUJVlJ",
+        "apiProducts": [
+          {
+            "apiproduct": "Protected_API_Sample_SAML_Proxy"
+          },
+          {
+            "apiproduct": "SAMLBasedIdentityAPIs"
+          }
+        ]
+      }
+    ]
+  }
+]

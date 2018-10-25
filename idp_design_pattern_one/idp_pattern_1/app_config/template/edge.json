@@ -1,0 +1,78 @@
+{
+    "version": "1.0",
+	"orgConfig": {
+        "apiProducts": [
+            {
+                "name": "idp.api_product.name.value",
+                "apiResources": [
+                    "/",
+                    "/**"
+                ],
+                "approvalType": "auto",
+                "attributes": [
+                    {
+                        "name": "description",
+                        "value": "IdP integration using Open Id Connect"
+                    }
+                ],
+                "description": "Identity APIs integrate IdP using Open Id Connect",
+                "displayName": "Identity APIs",
+                "environments": [
+                    "test"
+                ],
+                "proxies": [
+                    "IdP_Pattern_One_proxy"
+                ],
+                "quota": "10000",
+                "quotaInterval": "1",
+                "quotaTimeUnit": "month",
+                "scopes": []
+            },
+            {
+                "name": "idp.sample_api_product.name.value",
+                "apiResources": [
+                    "/",
+                    "/**"
+                ],
+                "approvalType": "auto",
+                "attributes": [
+                    {
+                        "name": "description",
+                        "value": "Sample API that verifies IdP integration Access Token"
+                    }
+                ],
+                "description": "Sample API that validates IdP integrated access token",
+                "displayName": "Sample Protected API",
+                "environments": [
+                    "test"
+                ],
+                "proxies": [
+                    "Protected_API_Sample_Proxy"
+                ],
+                "quota": "10000",
+                "quotaInterval": "1",
+                "quotaTimeUnit": "month",
+                "scopes": []
+            }              
+        ],
+        "developers": [
+            {
+                "email": "idp.developer.email.value",
+                "firstName": "idp.developer.firstname.value",
+                "lastName": "idp.developer.lastname.value",
+                "userName": "idp.developer.name.value",
+                "attributes": []
+            }
+        ],
+        "developerApps": {
+            "idp.developer.email.value": [
+                {
+                    "name": "idp.app.name.value",
+                    "apiProducts": [ "idp.api_product.name.value","idp.sample_api_product.name.value" ],
+                    "callbackUrl": "http://example.com",
+                    "scopes": []
+                }
+            ]
+        }
+    }
+}

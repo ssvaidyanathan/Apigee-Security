@@ -1,0 +1,30 @@
+{
+    "version": "1.0",
+    "envConfig": {
+        "test": {
+            "caches": [
+                {
+                    "name": "RELAY_STATE_CACHE",
+                    "expirySettings":{
+                        "timeoutInSec": {
+                          "value": "idp.saml.relaystate.cache.ttl.value"
+                        }
+                      },
+                    "description": "Relay State cache for SAML"
+                }
+            ],
+            "kvms": [
+                {
+                    "name": "IdP_SAML_Info",
+                    "entry": [
+                        {"name": "idp.saml.endpoint","value": "idp.saml.endpoint.value"},
+                        {"name": "idp.sp.relay.state.request.key","value": "idp.sp.relay.state.request.key.value"},
+                        {"name": "idp.sp.entity.id.value","value": "idp.sp.entity.id.value.value"},
+                        {"name": "idp.hostname","value": "idp.hostname.value"},
+                        {"name": "idp.sp.entity.id.key","value": "idp.sp.entity.id.key.value"}
+                    ]
+                }
+            ]
+        }
+    }
+}

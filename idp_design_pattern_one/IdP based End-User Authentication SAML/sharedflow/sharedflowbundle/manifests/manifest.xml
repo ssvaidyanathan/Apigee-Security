@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="RetrieveIdPSAMLInfo" version="SHA-512:4ea6facd515b358ebbe4f4596262da3c15014c1d77d3619b8d8c87ce7c06183c78779283e2f78797057a70a106788ef55cfd6f60dba8d15c82a4e116d07adb99"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:417f0fb6eeb57348a28f5a6596588106690f44cc9ea3d85a954c1f6b149de0af466a7dae7713699e2895f0369f50f19c3f7d69ceeeb7b258e6dcc54b6ce73deb"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

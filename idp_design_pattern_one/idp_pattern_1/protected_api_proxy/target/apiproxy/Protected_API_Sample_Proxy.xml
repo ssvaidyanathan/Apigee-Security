@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="Protected_API_Sample_Proxy">
+    <Basepaths>/v1/protected_api</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1510891139496</CreatedAt>
+    <CreatedBy>naseerm@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>OIDC_Flow</DisplayName>
+    <LastModifiedAt>1537952597983</LastModifiedAt>
+    <LastModifiedBy>naseerm@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:700f939ead73bfe6550e6f72e22b52fb96f75033ec59594025f7c276479275004a03d409710380864e649d4418c366e8e5ff013e5a0bab13ab3ab91409981fef:us-east-1</ManifestVersion>
+    <Policies>
+        <Policy>OAuth_v20_1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

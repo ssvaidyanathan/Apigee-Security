@@ -1,0 +1,19 @@
+[
+  {
+    "name": "IdentityDemoApp",
+    "credentials": [
+      {
+        "consumerKey": "nLH97nQbUTFChXlyRXrnAe0M7M7hbfl5",
+        "consumerSecret": "GobSdWaHWFxDLnmD",
+        "apiProducts": [
+          {
+            "apiproduct": "IdentityAPIs"
+          },
+          {
+            "apiproduct": "Protected_API_Sample_Proxy"
+          }
+        ]
+      }
+    ]
+  }
+]

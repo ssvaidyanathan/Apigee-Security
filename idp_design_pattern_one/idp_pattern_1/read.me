@@ -1,0 +1,38 @@
+
+## Instructions
+
+ 1. Clone or download the solution [here](https://githib.com).
+ 2. Unzip the downloaded package, and edit the idp.config properties file as follows:
+
+	 | Key 								| Description|
+	 |--------------------------|---------------|
+	 | idp.client.id.value		|This is your IdP issued Client Id for Apigee. Using this Client Id Apigee can leverage IdP provided Services|
+     | idp.client.secret.value|This is the Client Secret corresponding to the above Client Id issued by IdP|	 
+     | idp.hostname.value|This is the hostname of the IdP, The hostname is the fully qualified domain name of the idP. |
+     | idp.atz_code.endpoint.value| This is the OAuth [Authorize endpoint](https://oauth.org/token) of the IdP. ***Note the value should not have the leading /***|     
+     | idp.atz_code_to_token.endpoint.value| This is the OAuth [Token endpoint](https://oath20.org/userinfo) of the IdP. ***Note the value should not have the leading /*** |
+	 | idp.userinfo.endpoint.value| This is the OpenId Connect specifications defined [User Info](https://openid.org/userinfo) endpoint of the IdP. ***Note the value should not have the leading /***|
+	 | idp.jwks.endpoint.value|This is the OpenId Connect specifications defined [JWKS endpoint](https://openid.org/jwks) of the IdP. ***Note the value should not have the leading /***|     
+     | idp.scope.value			|This is the list of scopes that are requested for the OpenID Connect handshake between IdP and Apigee. It should atleast have one scope as defined by OpenId Connect Specifications: the [openid](https://openid.org/scope)|
+	 | idp.subject.value		|This is the OpenId Connect Specifications defined [Subject Identifier](https://openidconnect.com) attribute configured on the IdP.  |
+	 | idp.issuer.value			|This is the OpenId Connect Specifications defined [Issuer Identifier](https://openidconnect.com) attribute configured on the IdP.|
+	 | idp.audience.value|This is the OpenId Connect Specifications defined [Audience Identifier](https://openidconnect.com) attribute configured on the IdP.|
+	 | idp.redirect_uri.value|This is the OpenId Connect Specifications defined [Redirect URI](https://openidconnect.com) attribute configured on the IdP. The Apigee proxy corresponding to this Redirect URI will be deployed as part of this configuration. |
+
+        
+ 4. Below are other peroperties in the same idp.config file that have predefined default value. If you like you can change any of these defaults with values you like:
+        | Key 								| Description|
+	    |--------------------------|---------------|
+	    | idp.atz_code.cache.ttl.value| This is the Time to Live value of caching State |
+	    | idp.jwks.cache.ttl.value||
+        | idp.api_product.name.value||
+        | idp.developer.name.value||
+        | idp.developer.email.value||
+        | idp.developer.firstname.value||
+        | idp.developer.lastname.value||
+        | idp.app.name.value||
+        | idp.sample_api_product.name.value||
+        |||
+        |||
+        |||
+	 

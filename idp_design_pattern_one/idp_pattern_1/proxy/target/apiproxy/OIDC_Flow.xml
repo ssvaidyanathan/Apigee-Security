@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="OIDC_Flow">
+    <Basepaths>/v1/idp</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1510891139496</CreatedAt>
+    <CreatedBy>naseerm@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>OIDC_Flow</DisplayName>
+    <LastModifiedAt>1537952597983</LastModifiedAt>
+    <LastModifiedBy>naseerm@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:700f939ead73bfe6550e6f72e22b52fb96f75033ec59594025f7c276479275004a03d409710380864e649d4418c366e8e5ff013e5a0bab13ab3ab91409981fef:us-east-1</ManifestVersion>
+    <Policies>
+        <Policy>Add_ClientID_Secret_ATZ_Header</Policy>
+        <Policy>BadRequest_NoAuthorizationCode</Policy>
+        <Policy>Cache_JWKS</Policy>
+        <Policy>Exchange_AccessToken_For_Code</Policy>
+        <Policy>Extract_JWKS</Policy>
+        <Policy>Extract_UserInfo</Policy>
+        <Policy>Get_Latest_JWKS</Policy>
+        <Policy>Get_UserInfo</Policy>
+        <Policy>Lookup_Cache_JWKS</Policy>
+        <Policy>Lookup_StateId_and_ClientId</Policy>
+        <Policy>OAuth_v20_1</Policy>
+        <Policy>OAuthToken_Response</Policy>
+        <Policy>Read_AccessToken_And_IdToken</Policy>
+        <Policy>Remove_ATZ_Header</Policy>
+        <Policy>SF_Retrieve_IdP_Info</Policy>
+        <Policy>Send_Redirect</Policy>
+        <Policy>Set_CC_Request_OAuth</Policy>
+        <Policy>Store_Request_Info</Policy>
+        <Policy>Verify_Client_Id</Policy>
+        <Policy>Verify_ClientInfo</Policy>
+        <Policy>Verify_IdP_Issued_IdToken</Policy>
+        <Policy>Verify_IdP_Issued_IdToken_With_Latest_JWKS</Policy>
+        
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

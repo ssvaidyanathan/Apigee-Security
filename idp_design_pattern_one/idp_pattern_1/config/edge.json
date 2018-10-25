@@ -1,0 +1,46 @@
+{
+    "version": "1.0",
+    "envConfig": {
+        "test": {
+            "caches": [
+                {
+                    "name": "ATZ_CODE_STATE_CACHE",
+                    "expirySettings":{
+                        "timeoutInSec": {
+                          "value": "300"
+                        }
+                      },
+                    "description": "Authorization Code and State Cache"
+                },
+                {
+                    "name": "JWKS_CACHE",
+                    "expirySettings":{
+                        "timeoutInSec": {
+                          "value": "300"
+                        }
+                      },
+                    "description": "JWKS Response Cache"
+                }
+            ],
+            "kvms": [
+                {
+                    "name": "IdP_OIDC_Info",
+                    "entry": [
+                        {"name": "idp.client.id","value": "1VqI67c2U8wlkjCVN0qX"},
+                        {"name": "idp.scope","value": "openid+profile+email"},
+                        {"name": "idp.subject","value": "idp.subject.value"},
+                        {"name": "idp.issuer","value": "https://dev-978318.oktapreview.com"},
+                        {"name": "idp.userinfo.endpoint","value": "oauth2/v1/userinfo"},
+                        {"name": "idp.atz_code_to_token.endpoint","value": "oauth2/v1/token"},
+                        {"name": "idp.hostname","value": "dev-978318.oktapreview.com"},
+                        {"name": "idp.jwks.endpoint","value": "oauth2/v1/keys"},
+                        {"name": "idp.client.secret","value": "F0M80AOi2ZUabbiUixbvoDkdNOpAywqMyLxFo0_3"},
+                        {"name": "idp.atz_code.endpoint","value": "oauth2/v1/authorize"},
+                        {"name": "idp.audience","value": "1VqI67c2U8wlkjCVN0qX"},
+                        {"name": "idp.redirect_uri","value": "https://saisarantest-eval-test.apigee.net/v1/idp/oidc/cb"}
+                    ]
+                }
+            ]
+        }
+    }
+}

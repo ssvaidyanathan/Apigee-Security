@@ -1,0 +1,30 @@
+{
+    "version": "1.0",
+    "envConfig": {
+        "test": {
+            "caches": [
+                {
+                    "name": "RELAY_STATE_CACHE",
+                    "expirySettings":{
+                        "timeoutInSec": {
+                          "value": "3000"
+                        }
+                      },
+                    "description": "Relay State cache for SAML"
+                }
+            ],
+            "kvms": [
+                {
+                    "name": "IdP_SAML_Info",
+                    "entry": [
+                        {"name": "idp.saml.endpoint","value": "idp/startSSO.ping"},
+                        {"name": "idp.sp.relay.state.request.key","value": "TargetResource"},
+                        {"name": "idp.sp.entity.id.value","value": "APIGEE_SAML_POST"},
+                        {"name": "idp.hostname","value": "35.237.173.209:9031"},
+                        {"name": "idp.sp.entity.id.key","value": "PartnerSpId"}
+                    ]
+                }
+            ]
+        }
+    }
+}

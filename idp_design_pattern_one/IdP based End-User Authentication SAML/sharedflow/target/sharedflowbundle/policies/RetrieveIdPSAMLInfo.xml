@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="RetrieveIdPSAMLInfo" mapIdentifier="IdP_SAML_Info">
+    <DisplayName>RetrieveIdPSAMLInfo</DisplayName>
+    <ExpiryTimeInSecs>5</ExpiryTimeInSecs>
+    <Get assignTo="idp.hostname">
+        <Key>
+            <Parameter>idp.hostname</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="idp.saml.endpoint">
+        <Key>
+            <Parameter>idp.saml.endpoint</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="idp.sp.relay.state.request.key">
+        <Key>
+            <Parameter>idp.sp.relay.state.request.key</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="idp.sp.entity.id.key">
+        <Key>
+            <Parameter>idp.sp.entity.id.key</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="idp.sp.entity.id.value">
+        <Key>
+            <Parameter>idp.sp.entity.id.value</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

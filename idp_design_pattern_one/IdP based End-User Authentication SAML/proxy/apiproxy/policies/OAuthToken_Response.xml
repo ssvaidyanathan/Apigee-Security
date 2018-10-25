@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="OAuthToken_Response">
+    <DisplayName>OAuthToken_Response</DisplayName>
+    <Attributes>
+        <Attribute name="subject.name" ref="saml.subject" display="true"/>
+        <Attribute name="subject.saml.id" ref="saml.id" display="true"/>
+        <Attribute name="subject.saml.issuer" ref="saml.issuer" display="true"/>
+    </Attributes>
+    <StoreToken>true</StoreToken>
+    <Operation>GenerateAccessToken</Operation>
+    <ExternalAuthorization>true</ExternalAuthorization>
+    <!-- ExternalAccessToken>access_token</ExternalAccessToken -->
+    <ExpiresIn>idp.saml.access_token.expiry.value</ExpiresIn>
+    <!-- 30 minutes -->
+    <SupportedGrantTypes>
+        <GrantType>client_credentials</GrantType>
+        <GrantType>password</GrantType>
+    </SupportedGrantTypes>
+    <GenerateResponse enabled="true"/>
+</OAuthV2>
