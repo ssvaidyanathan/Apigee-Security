@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout async="false" continueOnError="false" enabled="true" name="SF_Retrieve_IdP_Info">
-    <DisplayName>SF_Retrieve_IdP_Info</DisplayName>
-    <FaultRules/>
-    <Properties/>
-    <SharedFlowBundle>SharedFlow_GetIdP_OIDC_Info</SharedFlowBundle>
-</FlowCallout>
