@@ -1,0 +1,16 @@
+{
+  "name": "idp-pattern-1",
+  "version": "1.0.0",
+  "description": "Deploy configurations, shared flows and proxies required for IDP Pattern 1",
+  "main": "setup.js",
+  "scripts": {
+    "start": "npm install && node setup.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "maven": "latest",
+    "replace-in-file": "latest",
+    "prompt": "latest"
+  }
+}
