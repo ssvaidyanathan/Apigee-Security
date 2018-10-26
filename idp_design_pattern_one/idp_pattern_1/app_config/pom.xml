@@ -25,7 +25,7 @@
 			          </includes>
 			        </fileset>
 			        <fileset>
-			          <directory>${basedir}/app_info/</directory>devAppKeys.json
+			          <directory>${basedir}/app_info/</directory>
                       <includes>
                         <include>devAppKeys.json</include>
                       </includes>
