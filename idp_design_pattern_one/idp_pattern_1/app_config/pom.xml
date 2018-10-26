@@ -25,7 +25,10 @@
 			          </includes>
 			        </fileset>
 			        <fileset>
-			          <directory>${basedir}/app_info</directory>
+			          <directory>${basedir}/app_info/</directory>devAppKeys.json
+                      <includes>
+                        <include>devAppKeys.json</include>
+                      </includes>
 			        </fileset>
 			      </filesets>
 			    </configuration>
